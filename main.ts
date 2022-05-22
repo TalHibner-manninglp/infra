@@ -15,7 +15,7 @@ new PetAppStack(app, "petapp", {
     publicSubnets: Fn.tolist(devBase.vpc.publicSubnetsOutput),
     appSubnets: Fn.tolist(devBase.vpc.privateSubnetsOutput),
     ecsClusterName: devBase.ecsCluster.name,
-    repository: "TalHibner-manninglp/petapp", // Specify Git repository for PetApp
+    repository: "TalHibner/petapp", // Specify Git repository for PetApp
     branch: "main", // Specify the branch to build from
   })
 app.synth();
